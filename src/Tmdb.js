@@ -24,7 +24,7 @@ export default {
         return [
             {
                 slug: 'originals',
-                title: 'originais do Netflix',
+                title: 'Originais do Netflix',
                 items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`)
             },
             {
@@ -34,12 +34,12 @@ export default {
             },
             {
                 slug: 'toprated',
-                title: 'Recomendados para você',
+                title: 'Em alta',
                 items: await basicFetch (`/movie/top_rated?language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'action',
-                title: 'Açãi',
+                title: 'Ação',
                 items: await basicFetch (`/discover/movie?with_genres=28&language=pt-BR&api_key=${API_KEY}`)
             },
             {
